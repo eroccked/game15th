@@ -38,7 +38,8 @@ namespace FirstGame
             {
                 MessageBox.Show("Але ти красавчік, проста вах , ваше умний чувак");
                 start_game();
-            }            
+            }
+
             //Просто висвічує текст після натиску на кнопці, текст заданий параметром tag
             //button(position).Text = position.ToString();
 
@@ -77,7 +78,7 @@ namespace FirstGame
         private void start_game()
         {
             game.start();
-            for (int j = 0; j < 3; j++)
+            for (int j = 0; j < 100; j++)
                 game.shift_random();
             refresh();
 

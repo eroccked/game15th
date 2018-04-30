@@ -65,13 +65,14 @@ namespace FirstGame
         public bool check_numbers()
         {
             if (!(space_x == size - 1 &&
-                space_y == size - 1))
+                 space_y == size - 1))
                 return false;
             for (int x = 0; x < size; x++)
                 for (int y = 0; y < size; y++)
                     if (!(x == size - 1 && y == size - 1))
+                        if (map[x, y] != coords_to_position(x, y) + 1)
                         return false;
-            return true;
+            return true;                       
         }
 
         public int get_number(int position)
